@@ -1,0 +1,12 @@
+<?php
+
+header('Content-Type: application/json');
+header('Cache-Control: no-cache');
+header('Pragma: no-cache');
+header("Access-Control-Allow-Origin: *");
+
+$url = 'http://cdcvd-aw1b-vm2.bom.gov.au:8080/waterrestrictions/resources/filterRestrictionNames';
+
+echo file_get_contents($url . "?term=l");
+
+?>
